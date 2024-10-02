@@ -6,7 +6,7 @@ import { FaGraduationCap, FaBalanceScale, FaGavel, FaHandshake, FaBook, FaChild,
 const Personal = () => {
   return (
     <div className="relative bg-black">
-      <div className="md:bg-contain md:bg-right bg-cover bg-center bg-no-repeat md:h-[700px] h-screen my-10" style={{ backgroundImage: `url(${bg.src})` }}>
+      <div className="md:bg-contain md:bg-right bg-cover bg-center bg-no-repeat md:h-[700px] h-screen mt-10" style={{ backgroundImage: `url(${bg.src})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-60">
           <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-center h-full">
             <div className="md:w-1/3 mb-8 md:mb-0">

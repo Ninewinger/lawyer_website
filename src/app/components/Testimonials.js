@@ -34,9 +34,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-900 py-36 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h2 className={`${poppins.className} text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-8`}>TESTIMONIALS</h2>
+        <h2 className={`${poppins.className} text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-8`}>TESTIMONIOS</h2>
         <div className="relative h-64 sm:h-48">
           <AnimatePresence mode='wait'>
             <motion.div
