@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { halant } from "@/app/fonts";
+import { FaBalanceScale } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,40 +15,39 @@ const Navbar = () => {
     <nav className="z-50 w-full bg-black text-white py-5">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between mx-10 items-center h-16">
-          {/* Logo and Title */}
-          <div
-            className={`${halant.className} flex items-center border-4 border-gray-700 p-5`}
-          >
-            <h1 className="text-xl sm:text-3xl font-normal uppercase text-gray-400 tracking-wide flex gap-2">
-              lex <p className="text-blue-500">norte</p>
+          {/* Logo con ícono de balanza */}
+          <div className={`${halant.className} flex items-center border-4 border-gray-700 p-5`}>
+            <FaBalanceScale className="text-yellow-500 text-3xl" />
+            <h1 className="ml-2 text-xl sm:text-3xl font-normal uppercase text-gray-400 tracking-wide">
+              Empresa <span className="text-blue-500">Genérica</span>
             </h1>
           </div>
 
-          {/* Desktop Menu */}
+          {/* Menú Desktop */}
           <div className="hidden md:flex items-center space-x-20">
             <Link
               href="/"
               className="text-gray-300 hover:text-white uppercase text-xs tracking-widest"
             >
-              Homepage
+              Inicio
             </Link>
             <Link
               href="/about-us"
               className="text-gray-300 hover:text-white uppercase text-xs tracking-wider"
             >
-              Nosotros
+              Acerca de
             </Link>
             <Link
               href="/personal"
               className="text-gray-300 hover:text-white uppercase text-xs tracking-wider"
             >
-              personal
+              Equipo
             </Link>
             <Link
               href="/resources"
               className="text-gray-300 hover:text-white uppercase text-xs tracking-wider"
             >
-              recursos
+              Recursos
             </Link>
             <Link
               href="/contact"
@@ -57,7 +57,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Botón del Menú Móvil */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -81,26 +81,26 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menú Móvil */}
       <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <div className={`${halant.className} px-6 pt-5 pb-3 space-y-1 sm:px-3`}>
           <Link
             href="/"
             className="block text-gray-300 hover:text-white uppercase text-xs py-2 tracking-wider"
           >
-            Homepage
+            Inicio
           </Link>
           <Link
             href="/about-us"
             className="block text-gray-300 hover:text-white uppercase text-xs py-2 tracking-wider"
           >
-            Nosotros
+            Acerca de
           </Link>
           <Link
             href="/personal"
             className="block text-gray-300 hover:text-white uppercase text-xs py-2 tracking-wider"
           >
-            Personal
+            Equipo
           </Link>
           <Link
             href="/resources"

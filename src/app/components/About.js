@@ -8,7 +8,7 @@ const Card = ({ title, icon, description, color }) => (
     <hr className="w-1/3 border-yellow-500 border-1 my-6" />
     <p className="text-gray-200 text-sm mb-4">{description}</p>
     <button className="border border-yellow-300 text-yellow-300 py-2 px-12 hover:bg-gold hover:text-white transition duration-300 mt-4">
-      Mas Informacion
+      Más Información
     </button>
   </div>
 );
@@ -16,30 +16,29 @@ const Card = ({ title, icon, description, color }) => (
 const About = () => {
   const cards = [
     {
-        title: "Derecho de Familia",
-        icon: <FaBalanceScale className="text-yellow-500 text-4xl" />,
-        description: "El derecho de familia se encarga de regular las relaciones entre los miembros de una familia, abordando temas como el matrimonio, el divorcio, la patria potestad, la adopción y la tutela. Es fundamental para la protección de los derechos de los menores y las personas más vulnerables dentro del núcleo familiar, garantizando la estabilidad y el bienestar de sus integrantes.",
-        color: "bg-gray-900"
-      },
-      {
-        title: "Derecho Comercial",
-        icon: <FaBriefcase className="text-yellow-500 text-4xl" />,
-        description: "El derecho comercial regula las relaciones jurídicas entre comerciantes, empresas y particulares en el ámbito de las transacciones comerciales. Aborda áreas como la constitución de sociedades, contratos mercantiles, títulos de crédito, y las operaciones bancarias. Es esencial para garantizar un marco legal que promueva la equidad y transparencia en los negocios.",
-        color: "bg-gray-800"
-      },
-      {
-        title: "Policía Local",
-        icon: <FaGavel className="text-yellow-500 text-4xl" />,
-        description: "La jurisdicción de la policía local abarca la resolución de conflictos menores a nivel comunitario, como infracciones de tránsito, conflictos vecinales o incumplimientos de normativas locales. Su función es clave para mantener el orden y la convivencia en las ciudades, brindando acceso rápido y eficiente a la justicia en situaciones cotidianas para la protección de los derechos.",
-        color: "bg-gray-900"
-      },
-      {
-        title: "Derecho Civil",
-        icon: <FaShieldAlt className="text-yellow-500 text-4xl" />,
-        description: "El derecho civil es el conjunto de normas que regulan las relaciones privadas entre individuos, incluyendo contratos, obligaciones, derechos de propiedad, sucesiones, y la responsabilidad civil. Su objetivo es proteger los derechos e intereses de las personas, garantizando el cumplimiento de sus obligaciones y la compensación justa en caso de daños o perjuicios.",
-        color: "bg-gray-800"
-      }
-      
+      title: "Servicios Legales",
+      icon: <FaBalanceScale className="text-yellow-500 text-4xl" />,
+      description: "Descripción general de los servicios legales ofrecidos, incluyendo diversas áreas de especialización para atender las necesidades de los clientes.",
+      color: "bg-gray-900"
+    },
+    {
+      title: "Consultoría Empresarial",
+      icon: <FaBriefcase className="text-yellow-500 text-4xl" />,
+      description: "Servicios de consultoría para empresas, abarcando desde la gestión de proyectos hasta la optimización de procesos internos.",
+      color: "bg-gray-800"
+    },
+    {
+      title: "Asesoría Jurídica",
+      icon: <FaGavel className="text-yellow-500 text-4xl" />,
+      description: "Asesoramiento personalizado en diversas ramas del derecho, garantizando soluciones efectivas y adaptadas a cada situación.",
+      color: "bg-gray-900"
+    },
+    {
+      title: "Protección de Derechos",
+      icon: <FaShieldAlt className="text-yellow-500 text-4xl" />,
+      description: "Servicios enfocados en la protección y defensa de los derechos de nuestros clientes, asegurando el cumplimiento de la normativa vigente.",
+      color: "bg-gray-800"
+    }
   ];
 
   return (
